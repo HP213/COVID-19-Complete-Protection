@@ -70,6 +70,37 @@ Hardware
 
 Software
 
+Start MongoDB Server
+
+(I prefer don't change port number only change IPv4 address only)
+
+For DOCTOR SERVER
+
+1. So first of all clone this repository.
+2. cd COVID-19-Complete-Protection.
+3. cd DOC_SERVER (No need to install any package, we have uploaded all the modules for convience).
+4. Open another terminal, type ipconfig and not your ipv4 address.
+5. Open app.js and at bottom paste your IPV4 address in app.listern after port number, port number for DOC_SERVER is 3001 by default
+6. In terminal run command : node app.js, and your server started
+7. You app will run on ipv4:3001
+
+FOR USER SERVER
+
+1. Open another terminal
+2. cd COVID-19-Complete-Protection.
+3. cd User_Server (No need to install any package, we have uploaded all the modules for convience).
+4. Open app.js and at bottom paste your IPV4 address in app.listern after port number, port number for USER_SERVER is 3000 by default
+5. In terminal run command : node app.js, and your server started
+6. User Server Started
+
+FOR Application
+
+1. Open http://ai2.appinventor.mit.edu/
+2. Import COVID_19_Release.aia file given
+3. Go to blocks
+4. Change IPv4 address where ip address are given. Make sure please check the port number please.
+5. Then download that .apk using their companion app or in PC. You are good to go.
+
 ![Untitled presentation](https://user-images.githubusercontent.com/34127674/78975648-26ef0000-7b32-11ea-93fb-088638390ac7.png)
 
 
