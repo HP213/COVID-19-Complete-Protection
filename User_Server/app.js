@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 
 app.use(
   session({
-    secret : "Very SCRET",
+    secret : "Very Secret Changes",
     resave : false,
     saveUninititalized : true,
     store : new MongoStore({ mongooseConnection : mongoose.connection })
@@ -33,11 +33,12 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+
 app.use("/api/auth", auth);
 app.use("/addCoordinates", addition);
 
 //Add your own ipv4 address, port number for doctor server is 3001
-app.listen(3000,'192.168.43.44' || 'localhost',function() {
+app.listen(3000,'192.168.43.43' || 'localhost',function() {
     console.log('Application worker ' + process.pid + ' started...');
   }
   );
